@@ -68,7 +68,7 @@ while True:
         try:
             probability = model.predict_proba(predictX)
             if add == True:
-                print(probability[len(probability)-1])
+                print("The probability of a wicket is {}".format(probability[len(probability)-1][1]))
                 add = False
         except NameError:
             pass
